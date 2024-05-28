@@ -1,0 +1,194 @@
+#include <stdio.h>
+int main()
+{
+    int How_many_times_do_you_need_to_move;
+    int Brick1,Brick2,Brick3,choice,w=1;
+printf("choice 1 : The programe is ready to run.....\n");
+printf("choice 2 : Exit\n");
+    if(w>=1)
+    while(w!=0){
+     printf("Enter your choice\n");
+    scanf("%d",&choice);
+        switch(choice)
+        {
+        case 1:
+        
+        
+            printf("Enter the three Bricks weight\n");
+            scanf("%d%d%d",&Brick1,&Brick2,&Brick3);
+            printf("How many times do you need to move\n");
+            scanf("%d",&How_many_times_do_you_need_to_move);
+            if((Brick1<Brick2)&&(Brick2<Brick3)&&(Brick3>Brick1))
+            {
+                
+                printf("STEP 1 : Brick 3 is move to stick 3 \n");
+                 printf("STEP 2 : Brick 2 is move to stick 3 on the Brick 3\n");
+                 printf("STEP 3 : Brick 1 is move to stick 3 on the Brick 2\n");//5
+
+                  if(3<How_many_times_do_you_need_to_move)
+                {
+                    printf("%d is not necessery if it is enough to change three times\n",How_many_times_do_you_need_to_move);
+                }
+                else if(3>How_many_times_do_you_need_to_move)
+                {
+                    printf("If you change %d times you will not get the answer you have to change it three times\n",How_many_times_do_you_need_to_move);
+                }
+
+                else
+                {
+                    printf("Move if %d times and you will get the answer\n",How_many_times_do_you_need_to_move);
+                }
+                 printf("-----------------------------------------------------\n");
+                    printf("\n");
+                }
+            //1
+            
+            
+            
+            
+            
+            
+            else if((Brick1<Brick2)&&(Brick2>Brick3)&&(Brick3>Brick1))
+            {
+                 printf("STEP 1 : Brick 3 is move to stick 2\n");
+                printf("STEP 2 : Brick 2 is move to stick 3\n");
+                printf("STEP 3 : Brick 3 is move to stick 3 on the Brick 2\n");
+                printf("STEP 4 : Brick 1 is move to stick 3 on the Brick 3\n");//2
+                if(4<How_many_times_do_you_need_to_move)
+                {
+                    printf("%d is not necessery if it is enough to change four times\n",How_many_times_do_you_need_to_move);
+                }
+                else if(4>How_many_times_do_you_need_to_move)
+                {
+                    printf("If you change %d times you will not get the answer you have to change it four times\n",How_many_times_do_you_need_to_move);
+                }
+                else
+                {
+                    printf("Move if %d times and you will get the answer\n",How_many_times_do_you_need_to_move);
+                }
+                 printf("-----------------------------------------------------\n");
+                   printf("\n");
+               }
+            //2
+            
+            
+            
+            
+            
+            
+            
+            else if((Brick1<Brick2)&&(Brick2>Brick3)&&(Brick3<Brick1))
+            {
+                 printf("STEP 1 : Brick 3 is move to stick 2\n");
+                printf("STEP 2 : Brick 2 is move to stick 3\n");
+                printf("STEP 3 : Brick 1 is move to stick 3 on the Brick 2\n");
+                printf("STEP 4 : Brick 3 is move to stick 3 on the Brick 1\n");//2
+                if(4<How_many_times_do_you_need_to_move)
+                {
+                    printf("%d is not necessery if it is enough to change four times\n",How_many_times_do_you_need_to_move);
+                }
+                else if(4>How_many_times_do_you_need_to_move)
+                {
+                    printf("If you change %d times you will not get the answer you have to change it four times\n",How_many_times_do_you_need_to_move);
+                }
+                else
+                {
+                    printf("Move if %d times and you will get the answer\n",How_many_times_do_you_need_to_move);
+                }
+                 printf("-----------------------------------------------------\n");
+                   printf("\n");
+               }
+            //3
+            
+            
+            
+            
+            
+            else if((Brick1>Brick2)&&(Brick2<Brick3)&&(Brick3>Brick1))
+            {
+                 printf("STEP 1 : Brick 3 is move to stick 3\n");
+                printf("STEP 2 : Brick 2 is move to stick 2\n");
+                printf("STEP 3 : Brick 1 is move to stick 3 on the Brick 3\n");
+                printf("STEP 4 : Brick 2 is move to stick 3 on the Brick 1\n");//2
+                if(4<How_many_times_do_you_need_to_move)
+                {
+                    printf("%d is not necessery if it is enough to change four times\n",How_many_times_do_you_need_to_move);
+                }
+                else if(4>How_many_times_do_you_need_to_move)
+                {
+                    printf("If you change %d times you will not get the answer you have to change it four times\n",How_many_times_do_you_need_to_move);
+                }
+                else
+                {
+                    printf("Move if %d times and you will get the answer\n",How_many_times_do_you_need_to_move);
+                }
+                 printf("-----------------------------------------------------\n");
+                   printf("\n");
+               }
+            //4
+            
+            
+            
+            
+            
+            else if((Brick1>Brick2)&&(Brick2<Brick3)&&(Brick3<Brick1))
+            {
+                printf("STEP 1 : Brick 3 is move to stick 2\n");
+                 printf("STEP 2 : Brick 2 is move to stick 2 on the Brick 3\n");
+                 printf("STEP 3 : Brick 1 is move to stick 3\n");
+                 printf("STEP 4 : Brick 2 is move to stick 1\n");
+                 printf("STEP 5 : Brick 3 is move to stick 3 on the Brick 1\n");
+                 printf("STEP 6 : Brick 2 is move to stick 3 on the Brick 3\n");
+                 if(6<How_many_times_do_you_need_to_move)
+                {
+                    printf("%d is not necessery if it is enough to change six times\n",How_many_times_do_you_need_to_move);
+                }
+                else if(6>How_many_times_do_you_need_to_move)
+                {
+                    printf("If you change %d times you will not get the answer you have to change it six times\n",How_many_times_do_you_need_to_move);
+                }
+                else
+                {
+                    printf("Move if %d times and you will get the answer\n",How_many_times_do_you_need_to_move);
+                }
+                  printf("-----------------------------------------------------\n");
+                    printf("\n");
+                
+            }
+            else
+            {
+             
+             
+              
+              
+                 printf("STEP 1 : Brick 3 is move to stick 2\n");
+                printf("STEP 2 : Brick 2 is move to stick 2 on the Brick 3\n");
+                printf("STEP 3 : Brick 1 is move to stick 3\n");
+                printf("STEP 4 : Brick 2 is move to stick 3 on the  Brick 1\n");
+                printf("STEP 5 : Brick 3 is move to stick 3 on the brick 2\n");//1
+                if(5<How_many_times_do_you_need_to_move)
+                {
+                    printf("%d is not necessery if it is enough to change five times\n",How_many_times_do_you_need_to_move);
+                }
+                else if(5>How_many_times_do_you_need_to_move)
+                {
+                    printf("If you change %d times you will not get the answer you have to change it five times\n",How_many_times_do_you_need_to_move);
+                }
+                else
+                {
+                    printf("Move if %d times and you will get the answer\n",How_many_times_do_you_need_to_move);
+                }
+            
+                  printf("-----------------------------------------------------\n");//6
+
+                }
+                break;
+                
+                
+        default:
+            printf("Exit\n");
+            exit(0);
+        }
+    }
+return 0;
+}
